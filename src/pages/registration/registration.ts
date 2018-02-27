@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { FileChooser } from "@ionic-native/file-chooser";
+
 
 /**
  * Generated class for the RegistrationPage page.
@@ -30,7 +30,7 @@ export class RegistrationPage {
       let dataUrl = reader.result;
       //and do something with the reader.
     };
-    reader.readAsDataURL(file);
+    //reader.readAsDataURL(file);
   }
 
 
@@ -38,7 +38,7 @@ export class RegistrationPage {
     let file = event.target.files[0];
     //you can read various properties of the file (like mimetype and size) from the file object.
     console.log(file);
-    readfile(file);
+  
  }
 
 //this one reads the contents of the file as a URL that contains its data:

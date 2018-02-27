@@ -1,22 +1,25 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {  NavController } from 'ionic-angular';
+import { AllPage } from '../all/all';
+import { ApprovedPage } from '../approved/approved';
+import { NewPage } from '../new/new';
+import { PendingPage } from '../pending/pending';
 
 
-/**
- * Generated class for the HomescreenPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
-@IonicPage()
 @Component({
   selector: 'page-homescreen',
   templateUrl: 'homescreen.html',
 })
 export class HomescreenPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+ 	all = AllPage;
+ 	approved = ApprovedPage;
+ 	new = NewPage;
+ 	pending = PendingPage;
+ 	
+
+  constructor() {
   }
 
   ionViewDidLoad() {
