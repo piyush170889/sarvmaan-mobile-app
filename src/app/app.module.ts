@@ -13,7 +13,8 @@ import { AllPage } from '../pages/all/all';
 import { ApprovedPage } from '../pages/approved/approved';
 import { NewPage } from '../pages/new/new';
 import { PendingPage } from '../pages/pending/pending';
-
+import { PhoneNumberVerificationPage } from '../pages/phone-number-verification/phone-number-verification';
+import { OtpVerificationPage } from '../pages/otp-verification/otp-verification';
 
 
 @NgModule({
@@ -26,7 +27,9 @@ import { PendingPage } from '../pages/pending/pending';
     AllPage,
     ApprovedPage,
     NewPage,
-    PendingPage
+    PendingPage,
+    PhoneNumberVerificationPage,
+    OtpVerificationPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,9 @@ import { PendingPage } from '../pages/pending/pending';
     AllPage,
     ApprovedPage,
     NewPage,
-    PendingPage
+    PendingPage,
+    PhoneNumberVerificationPage,
+    OtpVerificationPage
     
   ],
   providers: [

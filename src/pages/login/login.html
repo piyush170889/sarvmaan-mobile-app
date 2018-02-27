@@ -1,38 +1,30 @@
-<!-- <ion-header>
-  <ion-navbar>
-    <ion-title>
-     Login
-    </ion-title>
-  </ion-navbar>
-</ion-header> -->
-
 <ion-content padding>
+    
+      <!-- login screen -->
+     <div align="center" style="margin-top:30px">
+      <h3>Sign In</h3>
+     </div>
 
- <div style="margin-top: 50%">
- <ion-card>
-  <ion-card-header>
-    Sign In
-  </ion-card-header>
-  <ion-list>
+   <div style="margin-top:30px">
+   <ion-row >
+      <ion-col col-12 ><ion-label style="color:#dc6460" stacked>User Name</ion-label> </ion-col>
+      <ion-col col-12 style="border-bottom: 1px solid #dedede" ><ion-input type="text" placeholder="Username"></ion-input></ion-col>
+   </ion-row>
 
-  <ion-item>
-  <ion-icon item-left name="phone-portrait"></ion-icon>
-    <!-- <ion-label floating>Contact No</ion-label> -->
-    <ion-input type="text" placeholder="Contact No"></ion-input>
-  </ion-item>
+   <ion-row >
+      <ion-col col-12 ><ion-label style="color:#dc6460" stacked>Password</ion-label></ion-col>
+     <ion-col col-12 style="border-bottom: 1px solid #dedede"> <ion-input type="password" placeholder="******"></ion-input></ion-col>
+   </ion-row>
+ </div>
 
-  <ion-item>
-   <ion-icon item-left name="lock" color="#FA6F51"></ion-icon>
-<!--     <ion-label floating>Password</ion-label> -->
-    <ion-input type="password" placeholder="Password"></ion-input>
-  </ion-item>
+   <div align="center" style="margin-top:40%;">
+       <button style="border-radius:5px;width: 250px; background:#dc6460;" ion-button (click)="homeScreen();">SIGN IN</button>
+   </div>
 
-</ion-list>
-</ion-card>
-<div padding-top></div>
-  <button color="secondary" ion-button full round>Sign In</button>
-<!-- <div align="right"><a href="#"><ion-label color="dark">Forget password?</ion-label></a></div> -->
-<div align="left" style="margin-top: -11%"><a href="#"><ion-label color="dark">Don't have an account? Sign Up</ion-label></a></div>
+   <div align="center" style="margin-top:10%" >
+       <p style="font-size:12px;  family:'Helvetica Bold',Helvetica',Arial Bold',Arial,sans-serif;">Don't have an account?<a href="#"
+        (click)="mobileNumberVerification();">Sign Up</a></p>
+  </div>
+ <!-- ./login screen -->
 
-</div>
 </ion-content>
